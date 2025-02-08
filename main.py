@@ -29,8 +29,10 @@ data = pd.read_csv("data.csv", sep=";")
 with col3:
     for index,row in data[::2].iterrows():
         st.header(row["title"])
+        st.write(row["description"])
 
 with col4:
     for index,row in data[1::2].iterrows():
         st.header(row["title"])
+        st.write(row["description"])
 
